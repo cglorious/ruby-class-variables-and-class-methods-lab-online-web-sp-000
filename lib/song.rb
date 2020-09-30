@@ -19,22 +19,14 @@ class Song
   end
 
   def self.genres
-    #@@genres has all of the elements, even duplicates
-    #iterate through genres for duplicates
-    #create a new array
     new_array = @@genres.uniq
     new_array
   end
 
-  #def self.artists(artist)
-    #if the genre is not in the array
-    #add it to the array
-    #if genre
-    #how to control for duplicates?
-    #if !@@artists.include?(artist)
-    #  @@artists << artist
-    #end
-  #end
+  def self.artists
+    new_array = @@genres.uniq
+    new_array
+  end
 
   #def self.genre_count
     #returns a hash
