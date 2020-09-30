@@ -39,6 +39,17 @@ class Song
     end
   end
 
+  def self.genre_count(genres)
+    genre_hash = Hash.new(0)
+    genres.each do |v|
+      genre_hash[v] +=1
+    end
+
+    genre_hash.each do |k, v|
+      puts "#{k} appears #{v} times"
+    end
+  end
+
   #def self.artist_count
     #histogram for artists
   #end
