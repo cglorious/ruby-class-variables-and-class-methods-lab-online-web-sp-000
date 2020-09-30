@@ -18,7 +18,16 @@ class Song
     @@count
   end
 
-  def self.genres(genre)
+  def self.genres
+    #@@genres has all of the elements, even duplicates
+    #iterate through genres for duplicates
+    #create a new array
+    genres_array = []
+    @@genres.collect each do |element|
+      if !@@genres.include?(element)
+        genres_array << element
+      end
+    end
     #if the genre is not in the array
     #add it to the array
     #if genre
