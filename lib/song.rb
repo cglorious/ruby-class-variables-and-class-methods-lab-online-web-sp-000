@@ -34,7 +34,7 @@ class Song
       genre_hash[v] +=1
     end
 
-    genre_hash each do |k, v|
+    genre_hash.each do |k, v|
       puts "#{k} appears #{v} times"
     end
   end
