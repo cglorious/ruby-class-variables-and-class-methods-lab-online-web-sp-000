@@ -39,8 +39,15 @@ class Song
     end
   end
 
-  #def self.artist_count
-    #histogram for artists
-  #end
+  def self.artist_count
+    artist_hash = Hash.new(0)
+    @@artists.each do |v|
+      artist_hash[v] +=1
+    end
+
+    artist_hash.each do |k, v|
+      {k: "#{v}"}
+    end
+  end
 
 end
