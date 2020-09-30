@@ -41,18 +41,16 @@ class Song
     end
   end
 
-  def self.genre_count
+  #def self.genre_count
     #returns a hash
     #keys are the name of each value
     #histogram
     #iterate over @@genres array, populate hash with key/value pairs
     #if hash contains a key, increment value of by one
-  end
+  #end
 
-  def self.artist_count
+  #def self.artist_count
     #histogram for artists
-  end
-
-  end
+  #end
 
 end
