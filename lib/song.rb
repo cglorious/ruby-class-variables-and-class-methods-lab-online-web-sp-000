@@ -22,13 +22,8 @@ class Song
     #@@genres has all of the elements, even duplicates
     #iterate through genres for duplicates
     #create a new array
-    genres_array = []
-    @@genres.collect do |element|
-      if !@@genres.include?(element)
-        genres_array << element
-      end
-      genres_array
-    end
+    new_array = @@genres.uniq
+    new_array
   end
 
   #def self.artists(artist)
