@@ -31,15 +31,15 @@ class Song
     end
   end
 
-  def self.artists(artist)
+  #def self.artists(artist)
     #if the genre is not in the array
     #add it to the array
     #if genre
     #how to control for duplicates?
-    if !@@artists.include?(artist)
-      @@artists << artist
-    end
-  end
+    #if !@@artists.include?(artist)
+    #  @@artists << artist
+    #end
+  #end
 
   #def self.genre_count
     #returns a hash
