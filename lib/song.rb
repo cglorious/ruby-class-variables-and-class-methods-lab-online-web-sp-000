@@ -23,7 +23,7 @@ class Song
     #iterate through genres for duplicates
     #create a new array
     genres_array = []
-    @@genres.collect each do |element|
+    @@genres.collect do |element|
       if !@@genres.include?(element)
         genres_array << element
       end
