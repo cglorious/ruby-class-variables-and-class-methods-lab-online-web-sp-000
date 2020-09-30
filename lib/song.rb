@@ -37,9 +37,6 @@ class Song
     genre_hash each do |k, v|
       puts "#{k} appears #{v} times"
     end
-    #how to count elements that are the same in array
-    #iterate over @@genres array, populate hash with key/value pairs
-    #if hash contains a key, increment value of by one
   end
 
   #def self.artist_count
