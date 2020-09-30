@@ -28,13 +28,19 @@ class Song
     new_array
   end
 
-  #def self.genre_count
-    #returns a hash
-    #keys are the name of each value
-    #histogram
+  def self.genre_count
+    genre_hash = Hash.new(0)
+    @@genres.each do |v|
+      genre_hash[v] +=1
+    end
+
+    genre_hash each do |k, v|
+      puts "#{k} appears #{v} times"
+    end
+    #how to count elements that are the same in array
     #iterate over @@genres array, populate hash with key/value pairs
     #if hash contains a key, increment value of by one
-  #end
+  end
 
   #def self.artist_count
     #histogram for artists
