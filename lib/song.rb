@@ -27,13 +27,7 @@ class Song
       if !@@genres.include?(element)
         genres_array << element
       end
-    end
-    #if the genre is not in the array
-    #add it to the array
-    #if genre
-    #how to control for duplicates?
-    if !@@genres.include?(genre)
-      @@genres << genre
+      genres_array
     end
   end
 
